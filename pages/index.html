@@ -16,11 +16,11 @@
   </head>
   <body> 
 
-    <div class="container-fluid d-flex" style="height: 100%;">
+    <div class="container-fluid d-flex  " style="height: 100%;">
       
       <%- include('./layout/webmenu'); -%>
 
-      <div class="w-75" style="height: 100%; font-size: 24px; line-height: 33px;">
+      <div class="w-75 " style="height: 100%; font-size: 24px; line-height: 33px;">
         <div class="d-flex justify-content-between pt-3 ps-4">
           <div class="d-flex ">
             <h1 class="me-5" style="color: #212529; font-weight: bold;">Admin</h1>
@@ -33,9 +33,136 @@
             <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">add_alert</span></li>
           </div>
         </div>
+
+        <div class="pt-4 ps-4 me-4">
+          <table class="table table-hover ">
+            <thead>
+              <tr style="font-weight: bold; border-bottom: 2px solid #212529;">
+                <th scope="col" >ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">visibility</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">create</span></li>
+                  </div>
+                </td>
+              </tr>
+              <!-- <tr>
+                <th scope="row">#7</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">search</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">add_alert</span></li>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                  <div class="d-flex justify-content-end">
+                    <li><span class="material-icons me-4" style="font-size: 24px; color: #212529;">search</span></li>
+                    <li><span class="material-icons" style="font-size: 24px; color: #212529;">add_alert</span></li>
+                  </div>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <div class="btn-group me-2 " role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-secondary">＜</button>
+            <button type="button" class="btn btn-outline-secondary active">1</button>
+            <button type="button" class="btn btn-outline-secondary">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+            <button type="button" class="btn btn-outline-secondary">＞</button>
+          </div>
+        </div>
+        
       </div>
+      
+      
+
     </div>
  
+    
 
     <script type="module" src="../main.js"></script>
   </body>
